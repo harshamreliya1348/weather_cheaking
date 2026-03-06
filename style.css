@@ -12,8 +12,8 @@ body{
     background-color:darkcyan;
 }
 .main{
-   // height: 70vh;
-   // width: 55vh;
+    /* height: 70vh;
+    width: 55vh; */
     border: 2px solid;
     background: linear-gradient(to right,#19f,#5eb);
     border-radius: 1rem;
@@ -114,4 +114,3 @@ img{
 
 
  
-

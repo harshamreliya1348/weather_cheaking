@@ -19,7 +19,7 @@ let input = document.querySelector("input");
        const URL =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=ed3f972bcd175474428f508b4f70d9a5`;
        let response=await fetch(URL);
        let data = await response.json();
-       console.log(data);
+      //  console.log(data);
        let city_name =data.name;
        c_name.innerText = city_name;
        let temp_main =data.main;
@@ -43,7 +43,6 @@ let input = document.querySelector("input");
        let two_point_wind = Math.round(wind_speed * 100.0) / 100.0;
        wind_para.innerText=`${two_point_wind}%`
     });
-
 
 
     
