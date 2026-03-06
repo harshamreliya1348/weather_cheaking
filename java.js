@@ -11,7 +11,7 @@ let input = document.querySelector("input");
 
     button.addEventListener("click",async()=> {
        let city = input.value;
-       const URL_2 = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ed3f972bcd175474428f508b4f70d9a5`;
+       const URL_2 = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ed3f972bcd175474428f508b4f70d9a5`;
        let response_2=await fetch(URL_2);
        let data_2 = await response_2.json();
        let lat = data_2[0].lat;
@@ -43,6 +43,7 @@ let input = document.querySelector("input");
        let two_point_wind = Math.round(wind_speed * 100.0) / 100.0;
        wind_para.innerText=`${two_point_wind}%`
     });
+
 
 
     
